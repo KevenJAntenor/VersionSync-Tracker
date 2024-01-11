@@ -1,0 +1,17 @@
+---
+  BasedOnStyle: Google
+  PointerAlignment: Left
+  DerivePointerAlignment: false
+  AccessModifierOffset: '-2'
+  AlignTrailingComments: 'true'
+  AllowAllParametersOfDeclarationOnNextLine: 'false'
+  BreakBeforeBraces: Attach
+  ColumnLimit: '80'
+  ConstructorInitializerAllOnOneLineOrOnePerLine: 'true'
+  IncludeBlocks: Regroup
+  IndentPPDirectives: AfterHash
+  IndentWidth: '2'
+  NamespaceIndentation: None
+  BreakBeforeBinaryOperators: All
+  BreakBeforeTernaryOperators: 'true'
+...
