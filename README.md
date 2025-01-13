@@ -31,3 +31,68 @@ This function is used in the `bumpvers` utility to increment the version in the 
 
 ```bash
 ./bumpvers fichier.bin
+```
+
+
+## 🚀 How to Run
+
+### Prerequisites
+1. **Environment Setup**:
+   - Ensure you are on a Linux-based system as the project uses `clock_gettime()` and other POSIX-compliant features.
+
+2. **Required Tools**:
+   - Install GCC for compilation if not already installed:
+     ```bash
+     sudo apt-get install gcc
+     ```
+   - Install CMake for project build management:
+     ```bash
+     sudo apt-get install cmake
+     ```
+
+---
+
+### Compilation Instructions
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-repo/version-sync-tracker.git
+   cd version-sync-tracker
+Generate the Build Files:
+
+Use cmake to create the build files:
+```bash
+cmake .
+```
+Build the Project:
+
+Compile the project using make:
+```bash
+make
+```
+Running the Program
+Run the bumpvers Utility:
+
+To increment the version number of a binary file, execute:
+```bash
+./bumpvers fichier.bin
+```
+Replace fichier.bin with the desired file name.
+Verify File Content:
+
+After running bumpvers, check the binary file to ensure the version is updated while preserving its content.
+Folder Structure
+cmake/: CMake configuration files for project build setup.
+src/: Contains the source code for the project, including the bumpvers utility implementation.
+test/: Directory for test scripts and related files.
+CMakeLists.txt: Build configuration file for CMake.
+config.h.in: Header file template used in the project.
+env.sh.in: Environment setup file template for additional configurations.
+Notes
+If the binary file does not exist, the bumpvers utility will create it with version 0 and the current timestamp.
+Ensure the magic word 0x1001CAFE matches the expected format. If it does not, the program will terminate to avoid corrupting unrelated files.
+Use make clean to remove build artifacts if needed:
+```bash
+make clean
+```
+The project automatically tracks and updates the modification timestamp using clock_gettime().
