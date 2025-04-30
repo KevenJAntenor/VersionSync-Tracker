@@ -1,4 +1,4 @@
-# VersionSync Tracker
+# 🔄📦🕵️‍♂️ VersionSync Tracker
 
 ## Project Overview
 
