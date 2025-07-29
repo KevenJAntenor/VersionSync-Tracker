@@ -13,7 +13,7 @@ The binary file format consists of:
 - Timestamp of the last modification (struct timespec, 16 bytes)
 - Arbitrary size valuable data
 
-### Version Increment Process
+### 📈 Version Increment Process
 
 To increment the version number:
 
@@ -25,7 +25,7 @@ To increment the version number:
 6. Important: Do not erase the following data, as it is the file's useful content.
 7. If the file does not exist, create it with version zero and the current time.
 
-### `bumpvers` Utility
+### `Bumpvers` Utility
 
 This function is used in the `bumpvers` utility to increment the version in the specified file. The program accepts a single argument, the name of the file. To execute the program and verify the file content, use the following command:
 
