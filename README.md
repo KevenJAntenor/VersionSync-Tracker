@@ -52,7 +52,7 @@ This function is used in the `bumpvers` utility to increment the version in the 
 
 ---
 
-### Compilation Instructions
+### ⚙️ Compilation Instructions
 
 1. **Clone the Repository**:
    ```bash
