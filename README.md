@@ -1,6 +1,6 @@
 # 🔄🏷️ VersionSync Tracker
 
-## 📝👀 Project Overview
+## 👀 Project Overview
 
 The VersionSync Tracker project aims to establish a file format for a new application. This format will incorporate metadata including a version number and the last modification date, in addition to the file's content.
 
