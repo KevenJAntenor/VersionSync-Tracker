@@ -95,4 +95,4 @@ Use make clean to remove build artifacts if needed:
 ```bash
 make clean
 ```
-The project automatically tracks and updates the modification timestamp using clock_gettime()
+The project automatically tracks and updates the modification timestamp using clock_gettime().
